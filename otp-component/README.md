@@ -4,8 +4,6 @@
 
 This is a reusable one-time-password component made with React.
 
----
-
 ## Usage
 
 ```jsx
@@ -21,11 +19,9 @@ export default function App() {
 	};
 
 	return (
-		<>
-			<div className='App'>
-				<OTPInput number={6} setCode={setCode} submitFunc={submitOTP} />
-			</div>
-		</>
+		<div className='App'>
+			<OTPInput number={6} setCode={setCode} submitFunc={submitOTP} />
+		</div>
 	);
 }
 ```
@@ -35,5 +31,3 @@ Props:
 -   `number`: number of desired input fields
 -   `setCode`: function to set otp code value
 -   `submitFunc`: function that is run when code length is equal to number of input fields
-
----
