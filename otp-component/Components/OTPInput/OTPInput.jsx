@@ -64,9 +64,6 @@ export default function OTPInput({ number, setCode, submitFunc }) {
 							/>
 						))}
 					</div>
-					<button>
-						<span>Submit</span>
-					</button>
 				</form>
 			</div>
 
