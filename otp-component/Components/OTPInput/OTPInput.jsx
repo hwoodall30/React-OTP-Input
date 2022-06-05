@@ -1,6 +1,6 @@
 import styles from './OTPInput.module.css';
 import { useState, useEffect } from 'react';
-export default function OTPInput({ number, code, setCode, submitFunc }) {
+export default function OTPInput({ number, setCode, submitFunc }) {
 	// State:
 	const [otpInputs, setOtpInputs] = useState([]);
 	const [codeLength, setCodeLength] = useState(0);

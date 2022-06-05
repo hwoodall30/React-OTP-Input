@@ -12,7 +12,7 @@ export default function App() {
 	return (
 		<>
 			<div className='App'>
-				<OTPInput number={6} code={code} setCode={setCode} submitFunc={submitOTP} />
+				<OTPInput number={6} setCode={setCode} submitFunc={submitOTP} />
 			</div>
 
 			<style jsx>{`
