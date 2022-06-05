@@ -14,7 +14,7 @@ export default function OTPInput({ number, setCode, submitFunc }) {
 	//When otpInputs changes, set code and codeLength
 	useEffect(() => {
 		setCode(otpInputs.join(''));
-		setCodeLength(otpInputs.filter(input => input !== '').length);
+		setCodeLength(otpInputs.filter((input) => input !== '').length);
 	}, [otpInputs]);
 
 	// Run submit function when codeLength equals the number of inputs
@@ -37,7 +37,7 @@ export default function OTPInput({ number, setCode, submitFunc }) {
 	};
 
 	// Handle paste event -- Pastes value into each input field
-	const handlePaste = e => {
+	const handlePaste = (e) => {
 		e.stopPropagation();
 		e.preventDefault();
 		const pastedOTP = e.clipboardData.getData('text/plain');
@@ -56,8 +56,8 @@ export default function OTPInput({ number, setCode, submitFunc }) {
 						{otpInputs.map((input, index) => (
 							<input
 								type={'text'}
-								onPaste={e => handlePaste(e, index)}
-								onChange={e => handleChange(e, index)}
+								onPaste={(e) => handlePaste(e, index)}
+								onChange={(e) => handleChange(e, index)}
 								maxLength={1}
 								key={index}
 								value={input}

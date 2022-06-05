@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function App() {
 	const [code, setCode] = useState('');
 
-	const submitOTP = otp => {
+	const submitOTP = (otp) => {
 		// API call to verify OTP
 		console.log('OTP verified');
 	};
